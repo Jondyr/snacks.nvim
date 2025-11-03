@@ -1,5 +1,35 @@
 # Changelog
 
+## [2.29.0](https://github.com/folke/snacks.nvim/compare/v2.28.0...v2.29.0) (2025-11-03)
+
+
+### Features
+
+* **gh:** added reviews and nice diffs to gh buffer views. See [#2411](https://github.com/folke/snacks.nvim/issues/2411) ([1335ca1](https://github.com/folke/snacks.nvim/commit/1335ca1956fa81ddb3e249721e8f422c4cd0c329))
+* **gh:** allow to update pr branch ([#2419](https://github.com/folke/snacks.nvim/issues/2419)) ([f75f307](https://github.com/folke/snacks.nvim/commit/f75f307af3230c9872939aabd2fb484d8ad3cb5f))
+* **gh:** when on a review comment, the `gh_comment` action will now do a reply instead of a top-level comment. Fixes [#2410](https://github.com/folke/snacks.nvim/issues/2410) ([a4f2b9d](https://github.com/folke/snacks.nvim/commit/a4f2b9da2d0dd73e127459fb372e0eb695d70cb2))
+* **gh:** you can now use `Snacks.picker.gh_actions()` directly to see actions for the checked out PR ([d0d10f6](https://github.com/folke/snacks.nvim/commit/d0d10f6d13a4285a83ccf225d2a8938152efcef8))
+* **picker.lsp_config:** added server/dynamic capabilities to preview ([da14fac](https://github.com/folke/snacks.nvim/commit/da14fac1e54dc0022b9ba724a50ae93e43f5f271))
+* **zen:** added `center` option that defaults to `true` for zen mode and `false` for zoom mode. Closes [#2422](https://github.com/folke/snacks.nvim/issues/2422) ([3c2d791](https://github.com/folke/snacks.nvim/commit/3c2d79162f8174d5e1c33539a72025a25f4af590))
+
+
+### Bug Fixes
+
+* **diff:** remove diff injections. Closes [#2406](https://github.com/folke/snacks.nvim/issues/2406) ([ecc21bb](https://github.com/folke/snacks.nvim/commit/ecc21bbb9b6969b039676ad7f5d34df5974b1580))
+* **gh.api:** get repo from upstream remote if availble. fallback to origin ([5043637](https://github.com/folke/snacks.nvim/commit/50436373c277906cf40e47380f3dc1bd7769a885))
+* **gh.api:** pass repo to cmd. Closes [#2415](https://github.com/folke/snacks.nvim/issues/2415) ([78046eb](https://github.com/folke/snacks.nvim/commit/78046eb4817e30e216d2456c84005d5264aad67f))
+* **gh.diff:** fixed rendering of diff header when wrap=true ([07c569d](https://github.com/folke/snacks.nvim/commit/07c569dfd5f869dbe23d32d7ce1a7547a6abe69a))
+* **gh.item:** better method to extract repo from gh url. Closes [#2418](https://github.com/folke/snacks.nvim/issues/2418) ([52d544c](https://github.com/folke/snacks.nvim/commit/52d544cc64da4e9cae4f3df5adf7a777b2ed0217))
+* **gh.render:** added support for older `StatusContext` checks. Closes [#2407](https://github.com/folke/snacks.nvim/issues/2407) ([74864a7](https://github.com/folke/snacks.nvim/commit/74864a7bb8390684a5132e4025a77a1de92865e8))
+* **gh.render:** use check name. See [#2407](https://github.com/folke/snacks.nvim/issues/2407) ([6f60105](https://github.com/folke/snacks.nvim/commit/6f60105302fcae45524a5b6232beb52829e93e3f))
+* **gh:** better way of determining current PR ([bd3c1a0](https://github.com/folke/snacks.nvim/commit/bd3c1a071483c943ce98723ef7ac79fda0c7ee16))
+* **image:** allow to fully disable all image rendering with `opts.image.enabled = false`. Closes [#2404](https://github.com/folke/snacks.nvim/issues/2404) ([34a6591](https://github.com/folke/snacks.nvim/commit/34a6591a616836d727140afcd9896981c64281e0))
+* **image:** disable image conversion error notifications by default ([cfcf525](https://github.com/folke/snacks.nvim/commit/cfcf52520765fb18113d89b970bd26a6aa6f543b))
+* **lsp:** check lsp handlers after LspAttach, since attached_buffers won't have been set ([1861b0a](https://github.com/folke/snacks.nvim/commit/1861b0a8eaee849fb8ed67a6764ef5021196bb58))
+* **picker.git_diff:** don't show git status, disable stage/unstage/restore when merge-base is set. Closes [#2397](https://github.com/folke/snacks.nvim/issues/2397) ([6ff82ca](https://github.com/folke/snacks.nvim/commit/6ff82cab7bd413bfe30cf1b1856729a59392c405))
+* **picker:** don't focus a picker window when toggling a window and picker wasn't current. closes [#2417](https://github.com/folke/snacks.nvim/issues/2417) ([b80b330](https://github.com/folke/snacks.nvim/commit/b80b330091b488e8f41f9e5228d9c9acbe333f7b))
+* **win:** fixed fixbuf. Closes [#2409](https://github.com/folke/snacks.nvim/issues/2409) ([2099572](https://github.com/folke/snacks.nvim/commit/2099572fe8b7296ecda13e20b553e9cd873cf165))
+
 ## [2.28.0](https://github.com/folke/snacks.nvim/compare/v2.27.0...v2.28.0) (2025-11-01)
 
 
